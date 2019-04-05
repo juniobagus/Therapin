@@ -5,6 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class LoadScene : MonoBehaviour {
 
+    public void LoadMenu()
+    {
+        SceneManager.LoadScene("MenuScene");
+    }
+
     public void LoadMulai()
     {
         SceneManager.LoadScene("MainScene");
@@ -12,6 +17,7 @@ public class LoadScene : MonoBehaviour {
 
     public void LoadPetunjuk()
     {
+        SceneManager.LoadScene("PetunjukScene");
         Debug.Log("Load Petunjuk");
     }
 

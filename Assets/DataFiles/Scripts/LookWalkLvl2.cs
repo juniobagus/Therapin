@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class LookWalk : MonoBehaviour
+public class LookWalkLvl2 : MonoBehaviour
 {
 
     public Transform vrCamera;
@@ -26,7 +26,7 @@ public class LookWalk : MonoBehaviour
     void Start()
     {
         //Coins init
-        count = 13;
+        count = 21;
         Counter();
 
         //Walk - Find the CharacterController component
@@ -53,16 +53,17 @@ public class LookWalk : MonoBehaviour
             cc.SimpleMove(forward * speed);
         }
 
-        if(transform.position.y < 1.5)
+        if (transform.position.y < 2.5)
         {
+            Debug.Log(transform.position.y);
             transform.Translate(Vector3.down * fallSpeed * Time.deltaTime, Space.World);
             transform.Rotate(Vector3.forward, spinSpeed * Time.deltaTime);
             moveForward = true;
         }
 
-        if(transform.position.y < -15)
+        if (transform.position.y < 1.5)
         {
-            SceneManager.LoadScene("MainScene");
+            SceneManager.LoadScene("MainScene2");
         }
 
 
@@ -70,21 +71,21 @@ public class LookWalk : MonoBehaviour
 
     public void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject.CompareTag("CoinsTag"))
+        if (other.gameObject.CompareTag("CoinsTag"))
         {
             count = count - 1;
             Counter();
             Destroy(other.gameObject);
         }
 
-        if(count == 0 )
+        if (count == 0)
         {
             cText.text = "Cari Trophy untuk menyelesaikan";
         }
 
         if (count == 0 && other.gameObject.CompareTag("TrophyTag"))
         {
-            SceneManager.LoadScene("MainScene2");
+            SceneManager.LoadScene("EndScene");
         }
     }
 

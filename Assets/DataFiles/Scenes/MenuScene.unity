@@ -684,8 +684,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: LoadLevel
+      - m_Target: {fileID: 450759621}
+        m_MethodName: LoadTentang
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1017,8 +1017,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: LoadLevel
+      - m_Target: {fileID: 450759621}
+        m_MethodName: LoadExit
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1274,8 +1274,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: LoadLevel
+      - m_Target: {fileID: 450759621}
+        m_MethodName: LoadPetunjuk
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

@@ -12,6 +12,15 @@ EditorBuildSettings:
     path: Assets/DataFiles/Scenes/MainScene.unity
     guid: a1c18f01e59beab4f928a28d4d0dcae2
   - enabled: 1
+    path: Assets/DataFiles/Scenes/MainScene2.unity
+    guid: fd2eeb7ec9a316045b29ea126fcb3967
+  - enabled: 1
+    path: Assets/DataFiles/Scenes/PetunjukScene.unity
+    guid: 991e254fb81b2b5479f91841cee1af80
+  - enabled: 1
+    path: Assets/DataFiles/Scenes/TentangScene.unity
+    guid: b35592c2f24b22a4380290f3f47fc19f
+  - enabled: 1
     path: Assets/DataFiles/Scenes/EndScene.unity
     guid: 69379f6a6fe7d774ab193b5c8386369c
   m_configObjects: {}
