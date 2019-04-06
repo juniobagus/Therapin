@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+
 public class LoadScene : MonoBehaviour {
+    
 
     public void LoadMenu()
     {
@@ -30,4 +32,5 @@ public class LoadScene : MonoBehaviour {
     {
         Debug.Log("Load Exit");
     }
+
 }
