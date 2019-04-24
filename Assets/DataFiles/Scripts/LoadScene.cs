@@ -25,12 +25,26 @@ public class LoadScene : MonoBehaviour {
 
     public void LoadTentang()
     {
+        SceneManager.LoadScene("TentangScene");
         Debug.Log("Load Tentang");
     }
 
     public void LoadExit()
     {
         Debug.Log("Load Exit");
+        Application.Quit();
+        // System.Diagnostics.Process.GetCurrentProcess().Kill();
+    }
+
+    /* void Awake()
+    {
+        Input.backButtonLeavesApp = true;
+    } */
+
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+            Application.Quit();
     }
 
 }

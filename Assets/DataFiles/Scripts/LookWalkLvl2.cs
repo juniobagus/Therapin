@@ -17,6 +17,8 @@ public class LookWalkLvl2 : MonoBehaviour
     //Coins Collect
     public int count;
     public Text cText;
+    public AudioSource coinsCollected;
+    public AudioClip coinsAudio;
 
     //falling effect
     public float fallSpeed = 8.0f;
@@ -76,6 +78,7 @@ public class LookWalkLvl2 : MonoBehaviour
             count = count - 1;
             Counter();
             Destroy(other.gameObject);
+            coinsCollected.PlayOneShot(coinsAudio);
         }
 
         if (count == 0)
